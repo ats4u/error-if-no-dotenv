@@ -1,0 +1,37 @@
+{
+  "name": "error-if-no-dotenv",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A module to throw an error if no dotenv file was found.",
+  "main": "index.mjs",
+  "type": "module",
+  "exports": {
+    "./common.js": {
+      "default": "./index.cjs"
+    },
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "scripts": {
+    "test": "sh test.sh",
+    "end":null
+  },
+  "files": [
+    "README.md",
+    "index.cjs",
+    "index.mjs",
+    "package.json"
+  ],
+  "author": {
+    "name": "Atsushi Oka",
+    "url": "https://github.com/ats4u/throw-if-no-dotenv"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ats4u/throw-if-no-dotenv"
+  },
+  "license": "ISC",
+  "end":null
+}
